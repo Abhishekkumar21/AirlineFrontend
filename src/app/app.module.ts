@@ -9,6 +9,8 @@ import { AddflightComponent } from './addflight/addflight.component';
 import { DeleteflightComponent } from './deleteflight/deleteflight.component';
 import { FormsModule } from '@angular/forms';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { HeaderComponent } from './header/header.component';
+import { SeatBookingComponent } from './seat-booking/seat-booking.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
     AddflightComponent,
     DeleteflightComponent,
     AdminloginComponent,
+    HeaderComponent,
+    SeatBookingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
