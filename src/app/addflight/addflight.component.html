@@ -1,22 +1,127 @@
-<form
-  #filghtForm="ngForm"
-  (submit)="addFlight(filghtForm.value)"
-  style="margin-left: 10px"
->
-  Flight name : <input type="text" name="fname" id="fname" ngModel /> <br />
-  Source : <input type="text" name="source" id="source" ngModel /> <br />
-  Destination :
-  <input type="text" name="destination" id="destination" ngModel /> <br />
-  Arrival Time : <input type="time" name="arrTime" id="arrTime" ngModel />
-  <br />
-  Departure Time:
-  <input type="time" name="deptTime" id="deptTime" ngModel /> <br />
-  Duration (hrs) :
-  <input type="number" name="duration" id="duration" ngModel /> <br />
-  Type : <input type="text" name="type" id="type" ngModel /> <br />
-  Fare : <input type="number" name="fare" id="fare" ngModel /> <br />
-  Column : <input type="number" name="col" id="col" ngModel /> <br />
-  Row : <input type="number" name="row" id="row" ngModel /> <br />
+<br />
+<br />
 
-  <button type="submit">Add</button>
-</form>
+<div class="container" style="width: 600px">
+  <div style="text-align: center">
+    <h2><b> Add New Flight </b></h2>
+  </div>
+  <div class="container" style="width: 550px; border-color: black">
+    <form
+      #filghtForm="ngForm"
+      (submit)="addFlight(filghtForm.value)"
+      style="margin-left: 10px"
+    >
+      <div class="form-group">
+        <label for="name"> <h4>Flight Name:</h4> </label>
+        <input
+          type="text"
+          id="fname"
+          class="form-control"
+          placeholder="Enter flight name "
+          ngModel
+        />
+      </div>
+      <div class="form-group">
+        <label for="source"> <h4>Source:</h4> </label>
+        <input
+          type="text"
+          id="source"
+          class="form-control"
+          placeholder="Enter Source "
+          ngModel
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="destination"> <h4>Destination:</h4> </label>
+        <input
+          type="text"
+          id="destination"
+          class="form-control"
+          placeholder="Enter Destination "
+          ngModel
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="arrivalTime"> <h4>Arrival Time:</h4> </label>
+        <input
+          type="time"
+          id="arrTime"
+          class="form-control"
+          placeholder="Enter Arrival Time "
+          ngModel
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="departureTime"><h4>Departure Time:</h4> </label>
+        <input
+          type="time"
+          id="deptTime"
+          class="form-control"
+          placeholder="Enter Departure Time "
+          ngModel
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="duration"> <h4>Duration(Hrs.):</h4> </label>
+        <input
+          type="number"
+          id="deptTime"
+          class="form-control"
+          placeholder="Enter Duration "
+          ngModel
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="type"> <h4>Type:</h4> </label>
+        <input
+          type="text"
+          id="type"
+          class="form-control"
+          placeholder="Enter Type "
+          ngModel
+        />
+      </div>
+      <div class="form-group">
+        <label for="fare"><h4>Fare(Rs.):</h4></label>
+        <input
+          type="number"
+          id="fare"
+          class="form-control"
+          placeholder="Enter Fare "
+          ngModel
+        />
+      </div>
+      <div class="form-group">
+        <label for="column"> <h4>Columns:</h4></label>
+        <input
+          type="number"
+          id="Col"
+          class="form-control"
+          placeholder="Enter No. of Columns "
+          ngModel
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="row"><h4>Rows:</h4> </label>
+        <input
+          type="number"
+          id="row"
+          class="form-control"
+          placeholder="Enter No. of Rows "
+          ngModel
+        />
+      </div>
+
+      <br />
+      <div class="form-group" style="text-align: center">
+        <button type="submit" class="btn btn-primary">Add</button>
+      </div>
+    </form>
+  </div>
+</div>
